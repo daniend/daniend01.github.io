@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Agendamento</title>
+    <style>
+        header, footer {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a {
+            color: white;
+            margin-left: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .input-field {
+            width: 45%;
+            margin: 10px 0;
+        }
+        .input-field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-field input,
+        .input-field select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .input-field select {
+            height: 35px;
+        }
+        .input-field button {
+            background-color: dodgerblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .input-field button:hover {
+            background-color: royalblue;
+        }
+        .info {
+            width: 45%;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .info h2 {
+            margin-top: 0;
+        }
+        .info p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">Petshop - Agendamento</a>
+    </header>
+    <form action="agendamento.php" method="post">
+        <div class="input-field">
+            <label for="pet-name">Nome do Pet</label>
+            <input type="text" id="pet-name" name="pet-name" required>
+        </div>
+        <div class="input-field">
+            <label for="service">Banho e Tosa</label>
+            <select id="service" name="service" required>
+                <option value="" selected disabled hidden>Selecione</option>
+                <option value="banho_e_tosa">Banho e Tosa</option>
+                <option value="banho">Banho</option>
+                <option value="tosa">Tosa</option>
+            </select>
+        </div>
+        <div class="input-field date-time">
+            <label for="time">Horário</label>
+            <input type="datetime-local" id="time" name="time" required>
+        </div>
+        <div class="input-field">
+            <button type="submit">Agendar</button>
+        </div>
+    </form>
+    
+    <footer>
+        <a href="index.html">Início</a>
+        <a href="cadastros.html">Cadastros</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="produtos.html">Produtos</a>
+    </footer>
+</body>
+</html>

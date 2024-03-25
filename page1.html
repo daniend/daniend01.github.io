@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Serviços e Produtos</title>
+    <style>
+        header,
+        footer {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a {
+            color: white;
+            margin-left: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .service {
+            border: 2px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            width: calc(33% - 10px);
+        }
+
+        .service:hover {
+            background-color: #f5f5f5;
+        }
+
+        .service img {
+            display: block;
+            margin: 10px auto;
+            width: 70%;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .products {
+            margin: 30px 0;
+        }
+
+        .product {
+            border: 2px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-price {
+            background-color: #ddd;
+            padding: 5px;
+            width: 50px;
+        }
+
+        .product-description {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Petshop - Serviços e Produtos</a>
+    </header>
+    <div class="title">Primus</div>
+    <div class="services">
+        <h1 class="title">Primus</h1>
+        <div class="services">
+            <div class="service">
+                <img src="images/dog_small.png" alt="Small Dog">
+                <h3>ADULTO</h3>
+                <p>D:</p>
+                <p>Pequeno Porte</p>
+                <p>Banho e Tosa - R$ 60,00</p>
+                <p>Banho - R$ 30,00</p>
+                <p>Tosa - R$ 40,00</p>
+                <p><a href="appointment.html">Agendar</a></p>
+            </div>
+            <div class="service">
+                <img src="images/dog_large.png" alt="Large Dog">
+                <h3>ADULTO</h3>
+                <p>D:</p>
+                <p>Grande Porte</p>
+                <p>Banho e Tosa - R$ 70,00</p>
+                <p>Banho - R$ 40,00</p>
+                <p>Tosa - R$ 50,00</p>
+                <p><a href="appointment.html">Agendar</a></p>
+            </div>
+            <div class="service">
+                <img src="images/dog_gold.png" alt="Gold Dog">
+                <h3>Primus Gold</h3>
+                <p>Cães</p>
+                <p>Power Performance 14kg - R$ 219,00</p>
+                <p><a href="product.html">Comprar</a></p>
+            </div>
+        </div>
+        <h2 class="title">Produtos</h2>
+        <div class="products">
+            <div class="product">
+                <div class="product-title">
+                    <h3>Ração Úmida Lata Pedigree</h3>
+                    <p class="product-price">R$ 11,49</p>
+                </div>
+                <p class="product-description">Para Cachorros ...</p>
+                <p><a href="product.html">Comprar</a></p>
+            </div>
+            <div class="product">
+                <div class="product-title">
+                    <footer>
+                        <a href="contact.html">Contato</a>
+                        <a href="about.html">Sobre</a>
+                        <a href="term.html">Termos</a>
+                    </footer>
+</body>
+</html>

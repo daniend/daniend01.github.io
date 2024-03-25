@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Rações Secas</title>
+    <style>
+        /* Add some basic styling for header and footer */
+        header, footer {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a {
+            color: white;
+            margin-left: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .products {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .product-item {
+            width: 23%;
+            border: 1px solid #ddd;
+            margin-bottom: 1em;
+            overflow: hidden;
+            position: relative;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 10px;
+            height: 100%;
+        }
+        .product-name {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-price {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .comprar {
+            background-color: dodgerblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .comprar:hover {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">Petshop</a>
+        </div>
+    </header>
+    <div class="products">
+        <div class="product-item">
+            <img src="https://via.placeholder.com/263x333?text=Produto+Whiskas" alt="Produto Whiskas">
+            <div class="product-info">
+                <div class="product-name">
+                    <span>Primitive</span>
+                    <br>
+                    <span>(Cães)</span>
+                </div>
+                <div class="product-actions">
+                    <span class="product-price">R$ 219,00</span>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/263x333?text=Produto+Primus" alt="Produto Primus">
+            <div class="product-info">
+                <div class="product-name">
+                    <span>Whiskas</span>
+                    <br>
+                    <span>Peixe 2,7kg</span>
+                </div>
+                <div class="product-actions">
+                    <span class="product-price">R$ 114,99</span>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="index.html">Início</a>

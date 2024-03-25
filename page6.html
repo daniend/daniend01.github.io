@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Rações Úmidas</title>
+    <style>
+        header, footer {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a {
+            color: white;
+            margin-left: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .products {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .product-item {
+            width: 23%;
+            border: 1px solid #ddd;
+            margin-bottom: 1em;
+            overflow: hidden;
+            position: relative;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 10px;
+            height: 100%;
+        }
+        .product-name {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-price {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .comprar {
+            background-color: dodgerblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .comprar:hover {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">Petshop</a>
+        </div>
+    </header>
+    <div class="products">
+        <div class="product-item">
+            <img src="https://via.placeholder.com/263x333?text=Whiskas" alt="Whiskas">
+            <div class="product-info">
+                <div class="product-name">
+                    <span>Ração Úmida Whiskas Lata</span>
+                    <br>
+                    <span>Patê de Frango para Gatos</span>
+                </div>
+                <div class="product-actions">
+                    <span class="product-price">Adultos - 290g<br>R$ 11,09</span>
+                    <button class="comprar" onclick="location.href='https://https://petyard.com.br/racao-umida-whiskas-sache-frango-ao-molho-para-gatos-adultos-85g/p?idsku=1898&gad_source=1&gclid=Cj0KCQjwwYSwBhDcARIsAOyL0fhHuRlwkdIFcV9HHHf2drmZkV0DAfHkxNmD5F1-D7xQsGSXV967S9kaAgwSEALw_wcB'">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/263x333?text=Pedigree" alt="Pedigree">
+            <div class="product-info">
+                <div class="product-name">
+                    <span>Ração Úmida Lata Pedigree</span>
+                    <br>
+                    <span>Para Cachorros Adultos Patê De Carne</span>
+                </div>
+                <div class="product-actions">
+                    <span class="product-price">280g<br>R$ 11,49</span>
+                   <button class="comprar" onclick="location.href='https:https://https://petyard.com.br/racao-umida-pedigree-sache-frango-ao-molho-para-caes-adultos-100-g/p?idsku=3853&gad_source=1&gclid=Cj0KCQjwwYSwBhDcARIsAOyL0fiI1rh_dxeAsNCm_1AdfZVwXJyNsI1lhQ9fcsfh1IXf0cT3Vz-zT70aAgBPEALw_wcB'">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/263x333?text=Pedigree" alt="Pedigree">
+            <div class="product-info">
+                <div class="product-name">
+                    <span>Ração Úmida Lata Pedigree</span>
+                    <br>
+                    <span>Para Cachorros Adultos Patê De Frango</span>
+                </div>
+                <div class="product-actions">
+                    <span class="product-price">280g<br>R$ 11,49</span>
+                    <button class="comprar" onclick="location.href='https://www.example.com/produto/pedigree-frango'">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="index.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="cadastros.html">Cadastros</a>
+            <a href="racionalixo.html">Rações Secas</a>
+            <a href="accessories.html">Acessórios</a>
+        </div>
